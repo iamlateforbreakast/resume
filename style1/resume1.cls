@@ -5,6 +5,9 @@
 
 \RequirePackage{geometry}
 \RequirePackage{xcolor}
+\RequirePackage{tikz}
+
+\pagenumbering{gobble}
 
 \newcommand*{\surname}[1]{\def\@surname{#1}}
 \newcommand*{\firstname}[1]{\def\@firstname{#1}}
@@ -22,14 +25,14 @@
 }
 
 \newcommand{\cvsection}[1]{%
-  \vspace{3mm}
+  \par\vspace{3mm}
   \sectionstyle{#1}
-%  \phantomsection
-%  \color{gray}\vhrulefill{0.9pt}
+  \vskip 0mm
+  \color{gray}\vhrulefill{0.9pt}
 }
 
 \newcommand{\cventry}[3]{%
-  {#1}
+  {#1}\par
   #2
   #3
 }
