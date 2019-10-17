@@ -1,7 +1,12 @@
 
-\begin{minipage}[c]{5cm}
-  \includegraphics[scale=1]{img/me.png}
+\begin{minipage}[c][4cm]{5cm}
+  tikz\node[circle,draw,path picture={
+    \node at (path picture bounding box.center){
+    \includegraphics[width=3cm]{img/me.png}
+    };
+  }] {};
 \end{minipage}
-\begin{minipage}[c]{10cm}
+\hspace{4mm}
+\begin{minipage}[c][4cm]{10cm}
 Thomas Remion
 \end{minipage}
