@@ -1,10 +1,8 @@
 
 \begin{minipage}[c][4cm]{5cm}
-  tikz\node[circle,draw,path picture={
-    \node at (path picture bounding box.center){
-    \includegraphics[width=3cm]{img/me.png}
-    };
-  }] {};
+  \begin{tikzpicture}
+    \draw [path picture={\node at (path picture bounding box.center){\includegraphics[height=3.6cm]{img/me.png}};}](0,0) circle (1.8cm);
+  \end{tikzpicture}
 \end{minipage}
 \hspace{4mm}
 \begin{minipage}[c][4cm]{10cm}
