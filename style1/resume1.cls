@@ -32,8 +32,7 @@
 }
 
 \newcommand{\cventry}[3]{%
-  {#1}\par
-  #2
+  {#1 #2}\par
   #3
 }
 
